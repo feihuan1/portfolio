@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>projects</title>
+  </head>
+  <body>
+    <!-- modal -->
+    <dialog id="modal">
+      <div class="dialog-container">
+        <h2></h2>
+        <article>
+        
+        </article>
+        <em>------Press Esc to close-----</em>
+      </div>
+    </dialog>
+    <!-- header -->
+    <header class="header">
+      <a href="#" class="logo">FP</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- home -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, My name is</h3>
+        <h1>Feihuan Peng</h1>
+        <h3>I'm a <span class="typed" id="typed"></span></h3>
+        <p>
+          With each line of code I write, my passion blazes, fueled by the love
+          that ignites my soul for the limitless world of programming.
+        </p>
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/profile.php?id=100083776696213&mibextid=LQQJ4d"
+            target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://github.com/feihuan1" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="mailto:ericrealtor1997@gmail.com" target="_blank"
+            ><i class="bx bxl-gmail"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/feihuan-peng-03711927a"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+        <a href="#about" class="btn">About Me</a>
+      </div>
+
+      <div class="home-img">
+        <img src="./img/6.jpg" alt="photo-of-me" draggable="false" />
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./img/5.jpg" alt="second-photo-of-me" draggable="false" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>curious | Ambitious | Passionate</h3>
+        <p>
+          Hello, world! I'm Feihuan, a self-taught frontend developer with an
+          unwavering love for coding. From the very first line of code I wrote,
+          I knew I had found my true calling—a career that I am dedicated to
+          pursuing for a lifetime......
+        </p>
+        <a href="#about" class="btn" id="modal-about">Read More</a>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="skills-container">
+        <div class="skills-box">
+          <i class='bx bxl-javascript'></i>
+          <i class='bx bxl-react' ></i>
+          <h3>Web Development</h3>
+          <p>
+            Skilled in frontend web development with HTML, CSS, JavaScript, libraries like jQuery, React, Bootstrap, and understand backend technologies like Express,RESTful API, MySQL, MongoDB, and npm.
+          </p>
+          <a href="#skills" class="btn" id="modal-skill-1">Read More</a>
+        </div>
+
+        <div class="skills-box">
+          <i class='bx bx-video' ></i>
+          <i class='bx bxl-youtube' ></i>
+          <h3>Video Production</h3>
+          <p>
+            Proficient in video editing using Adobe Premiere or Final Cut Pro, skilled in editing techniques, special effects, keyframes, chroma keying, and masking.
+          </p>
+          <a href="#skills" class="btn" id="modal-skill-2">Read More</a>
+        </div>
+
+        <div class="skills-box">
+          <i class='bx bxs-paint'></i>
+          <i class='bx bx-camera' ></i>
+          <h3>Graphic Design</h3>
+          <p>
+            Experienced in graphic design using Photoshop and GIMP, adept at creating visually appealing designs, editing images, and working with various design elements.
+          </p>
+          <a href="#skills" class="btn" id="modal-skill-3">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+
+    <section class="projects" id="projects">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="projects-container">
+        <div class="projects-box">
+          <img src="./img/hammerGame.png" alt="project-screenshot-1" />
+          <div class="projects-layer">
+            <h4>Whack mole</h4>
+            <p>
+              A web game player can customize thier own character.
+            </p>
+            <a href="https://feihuan1.github.io/customImageWhackMoleGame/"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="./img/lifeCountDown.png" alt="project-screenshot-1" />
+          <div class="projects-layer">
+            <h4>Life Count Down</h4>
+            <p>
+              A web app that count Down in seconds of a person's life.
+            </p>
+            <a href="https://feihuan1.github.io/lifecountdown/"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="./img/ratatingImageGallery.png" alt="project-screenshot-1" />
+          <div class="projects-layer">
+            <h4>3D Rotating Gallery</h4>
+            <p>
+              Fetch random image from API and display with 3D rotating function.
+            </p>
+            <a href="https://feihuan1.github.io/rotatingImageGallery/"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="./img/recipeBook.png" alt="project-screenshot-1" />
+          <div class="projects-layer">
+            <h4>Recipe Book</h4>
+            <p>
+              Use AJAX fetch API get random recipe with link of detail .
+            </p>
+            <a href=" https://feihuan1.github.io/recipebook/"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="./img/drawingApp.png" alt="project-screenshot-1" />
+          <div class="projects-layer">
+            <h4>Drawing App</h4>
+            <p>
+              Use canvas and javascript build a fully functioning drawing pannel
+            </p>
+            <a href="https://feihuan1.github.io/drawingApp/"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="./img/imageSearchApp.png" alt="project-screenshot-1" />
+          <div class="projects-layer">
+            <h4>Image Search App</h4>
+            <p>
+              Use AJAX fetch image with user input keyword with show more function 
+            </p>
+            <a href=" https://feihuan1.github.io/ImageSearchApp/"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contacts <span>Me</span></h2>
+      <form action="mailto:ericrealtor1997@gmail.com">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name(Backend Needed)" />
+          <input type="email" name="email" placeholder="Email Address(Backend Needed)" />
+        </div>
+        <div class="input-box">
+          <input type="text" name="phone" placeholder="Phone Number(Backend Needed)" />
+          <input type="text" placeholder="Company Location(Backend Needed)" />
+        </div>
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Message...(Backend Needed)"
+        ></textarea>
+        <input type="submit" value="Email Me Now" class="btn" />
+      </form>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p><i class='bx bx-phone' ></i>: +1 (725)-400-5628</p>
+        <p><i class='bx bxl-gmail' ></i>: ericrealtor1997@gmail.com</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bxs-to-top"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
