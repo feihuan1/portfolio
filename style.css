@@ -458,7 +458,9 @@ span {
 }
 
 /* -----contact---------contact---------contact---------contact----- */
-
+.contact{
+    min-height: 95vh;
+}
 .contact h2 {
   margin-bottom: 3rem;
 }
