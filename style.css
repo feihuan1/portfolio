@@ -85,6 +85,21 @@ dialog{
   font-size: 1.1rem;
   animation: flashing 3s ease infinite;
   }
+  dialog .icon{
+    
+    position: relative;
+
+  }
+  dialog i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    display: block;
+
+  }
 
   @keyframes flashing {
     0%{
@@ -428,6 +443,9 @@ span {
   transform: translateY(100%);
   transition: 0.5s ease;
 }
+.projects-layer.slide{
+  transform: translateY(0%);
+}
 
 .projects-box:hover .projects-layer {
   transform: translateY(0%);
@@ -435,11 +453,13 @@ span {
 
 .projects-layer h4 {
   font-size: 2.3rem;
+  color: var(--dark);
 }
 
 .projects-layer p {
   font-size: 1.6rem;
   margin: 0.3rem 0 1rem;
+  color: var(--dark);
 }
 
 .projects-layer a {
