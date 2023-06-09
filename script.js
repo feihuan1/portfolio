@@ -73,6 +73,8 @@ const aboutBtn = document.querySelector("#modal-about");
 const skillOneBtn = document.querySelector("#modal-skill-1");
 const skillTwoBtn = document.querySelector("#modal-skill-2");
 const skillThreeBtn = document.querySelector("#modal-skill-3");
+const closeModal = document.querySelector('dialog i');
+let layers = document.querySelectorAll('.projects-layer')
 
 const navbarToggle = () => {
   menuIcon.classList.toggle("bx-x");
@@ -80,6 +82,9 @@ const navbarToggle = () => {
 };
 
 const scollDownChange = () => {
+  layers.forEach(layer => {
+    layer.classList.remove('slide')
+  })
   sections.forEach((sec) => {
     let top = window.scrollY;
     let offset = sec.offsetTop - 150;
@@ -135,6 +140,22 @@ skillThreeBtn.addEventListener("click", () => {
   modalText.innerHTML = modalcontent.skills.skillGraphic.text;
   modal.showModal();
 });
+closeModal.addEventListener('click', () => {
+  modal.close()
+})
+
+// toggle layer on project section for mobile, phone dont trigger :hover
+
+
+layers.forEach(layer => {
+  let box = layer.parentElement;
+  box.addEventListener('click', () => {
+    if(window.innerWidth < 768){
+      layer.classList.toggle('slide')
+    }
+  })
+})
+
 
 
 
