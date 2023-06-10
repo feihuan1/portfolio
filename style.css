@@ -466,15 +466,20 @@ span {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background: var(--text);
+  width: 4rem;
+  height: 4rem;
+  background: var(--dark);
   border-radius: 50%;
+}
+
+.projects-layer a:hover{
+  box-shadow: var(--dark) 0 0 3rem;
+  transform: scale(1.1);
 }
 
 .projects-layer a i {
   font-size: 2rem;
-  color: var(--dark);
+  color: var(--text);
 }
 
 /* -----contact---------contact---------contact---------contact----- */
