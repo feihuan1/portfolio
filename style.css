@@ -470,6 +470,7 @@ span {
   height: 4rem;
   background: var(--dark);
   border-radius: 50%;
+  margin: 0 10px;
 }
 
 .projects-layer a:hover{
